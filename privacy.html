@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>SnapSheet Privacy Policy</title>
+<meta name="description" content="Privacy policy for SnapSheet, the offline receipt-to-Excel app for Android.">
+<style>
+  :root {
+    --bg: #f6f7fb;
+    --card: #ffffff;
+    --ink: #101828;
+    --muted: #5a6475;
+    --line: #e4e7ec;
+    --brand: #000c37;
+    --accent: #0f9d76;
+    --accent-soft: #e6f7f1;
+  }
+  * { box-sizing: border-box; }
+  html { scroll-behavior: smooth; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font: 16px/1.7 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  header {
+    background:
+      radial-gradient(900px 320px at 85% -20%, rgba(82, 244, 193, .18), transparent 70%),
+      var(--brand);
+    color: #fff;
+    padding: 48px 24px 40px;
+  }
+  .wrap { max-width: 860px; margin: 0 auto; }
+  .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 22px; }
+  .logo {
+    width: 44px; height: 44px; border-radius: 12px;
+    background: rgba(110, 242, 196, .14);
+    border: 1px solid rgba(110, 242, 196, .38);
+    display: grid; place-items: center; flex: none;
+  }
+  .logo svg { width: 26px; height: 26px; }
+  .brand span { font-weight: 700; letter-spacing: .2px; font-size: 17px; }
+  h1 { font-size: clamp(28px, 4vw, 38px); line-height: 1.2; margin: 0 0 10px; letter-spacing: -.02em; }
+  .sub { color: rgba(255,255,255,.72); margin: 0; font-size: 15px; }
+  .meta {
+    display: flex; flex-wrap: wrap; gap: 8px 22px;
+    margin-top: 22px; color: rgba(255,255,255,.8); font-size: 14px;
+  }
+  main { padding: 32px 24px 72px; }
+  .card {
+    background: var(--card); border: 1px solid var(--line); border-radius: 18px;
+    padding: clamp(22px, 4vw, 40px);
+    box-shadow: 0 12px 40px rgba(16, 24, 40, .06);
+  }
+  nav.toc {
+    background: var(--accent-soft); border: 1px solid #c9ecdf; border-radius: 14px;
+    padding: 18px 22px; margin-bottom: 34px;
+  }
+  nav.toc strong { display: block; margin-bottom: 8px; font-size: 14px; letter-spacing: .04em; text-transform: uppercase; color: #0b6b52; }
+  nav.toc ol { margin: 0; padding-left: 20px; columns: 2; column-gap: 28px; }
+  nav.toc li { margin: 3px 0; font-size: 14px; }
+  nav.toc a { color: #0b6b52; text-decoration: none; }
+  nav.toc a:hover { text-decoration: underline; }
+  h2 { font-size: 21px; margin: 40px 0 12px; letter-spacing: -.01em; scroll-margin-top: 20px; }
+  h3 { font-size: 16px; margin: 24px 0 6px; color: #1d2939; }
+  p { margin: 0 0 12px; }
+  ul, ol { margin: 0 0 14px; padding-left: 22px; }
+  li { margin: 5px 0; }
+  a { color: var(--accent); }
+  .summary {
+    border-left: 4px solid var(--accent); background: #f2fbf7;
+    border-radius: 0 12px 12px 0; padding: 16px 20px; margin: 0 0 8px;
+  }
+  .summary ul { margin: 0; }
+  table { width: 100%; border-collapse: collapse; margin: 14px 0 20px; font-size: 14.5px; }
+  th, td { text-align: left; padding: 11px 12px; border-bottom: 1px solid var(--line); vertical-align: top; }
+  th { background: #f9fafb; font-size: 13px; letter-spacing: .03em; text-transform: uppercase; color: var(--muted); }
+  tr:last-child td { border-bottom: 0; }
+  code {
+    font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+    font-size: .9em; background: #f2f4f7; padding: 1px 5px; border-radius: 5px;
+  }
+  .note {
+    background: #fff8ec; border: 1px solid #f5d9a8; border-radius: 12px;
+    padding: 14px 18px; font-size: 14.5px; color: #66450f; margin: 16px 0;
+  }
+  footer { text-align: center; color: var(--muted); font-size: 13px; padding: 0 24px 40px; }
+  @media (max-width: 640px) {
+    nav.toc ol { columns: 1; }
+    table { font-size: 13.5px; }
+    th, td { padding: 9px 8px; }
+  }
+  @media print {
+    body { background: #fff; }
+    header { background: none; color: var(--ink); padding: 0 0 12px; }
+    .brand span, .sub, .meta { color: var(--muted); }
+    .card { box-shadow: none; border: 0; padding: 0; }
+    main { padding: 0; }
+    nav.toc { break-inside: avoid; }
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#6ef2c4" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 8V5a1 1 0 0 1 1-1h3M16 4h3a1 1 0 0 1 1 1v3M20 16v3a1 1 0 0 1-1 1h-3M8 20H5a1 1 0 0 1-1-1v-3"/>
+          <rect x="8" y="8" width="8" height="8" rx="1"/>
+          <path d="M8 11h8M8 13.5h8M11 8v8M13.5 8v8"/>
+        </svg>
+      </div>
+      <span>SnapSheet</span>
+    </div>
+    <h1>Privacy Policy</h1>
+    <p class="sub">Receipts stay on your device. AI is optional and off by default.</p>
+    <div class="meta">
+      <span><strong>Effective:</strong> 16 November 2026</span>
+      <span><strong>App:</strong> SnapSheet for Android</span>
+      <span><strong>Package:</strong> com.snapsheet.app</span>
+    </div>
+  </div>
+</header>
+
+<main>
+  <div class="wrap">
+    <article class="card">
+      <nav class="toc" aria-label="Contents">
+        <strong>Contents</strong>
+        <ol>
+          <li><a href="#summary">Summary</a></li>
+          <li><a href="#on-device">Data stored on your device</a></li>
+          <li><a href="#permissions">Permissions</a></li>
+          <li><a href="#leaving">When data leaves your device</a></li>
+          <li><a href="#sharing">Sharing and selling</a></li>
+          <li><a href="#children">Children</a></li>
+          <li><a href="#security">Security</a></li>
+          <li><a href="#deletion">Your choices and deletion</a></li>
+          <li><a href="#third-parties">Third-party services</a></li>
+          <li><a href="#changes">Changes</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ol>
+      </nav>
+
+      <p>SnapSheet turns receipt photos and PDFs into Excel spreadsheets. It is designed to work on your device: the developer does not operate a server that receives your receipts, and does not collect, sell or share your receipt data.</p>
+      <p>This policy explains what the app stores, when data leaves your device, and the choices you have. Developer: <strong>SnapSheet</strong> · Contact: <a href="mailto:wxujie666@gmail.com">wxujie666@gmail.com</a>.</p>
+
+      <h2 id="summary">1. Summary</h2>
+      <div class="summary">
+        <ul>
+          <li>Receipt images, PDFs, recognized text and extracted fields are processed and stored <strong>on your device</strong>.</li>
+          <li>The developer <strong>does not collect</strong> your receipts, does not require an account, and does not use advertising, analytics or crash-reporting SDKs.</li>
+          <li>Network access is used only for optional cloud AI that <strong>you</strong> configure, optional model downloads, and Google Play billing.</li>
+          <li>You can turn on <strong>Fully offline mode</strong> to block all network use by the app.</li>
+        </ul>
+      </div>
+
+      <h2 id="on-device">2. Data stored on your device</h2>
+      <table>
+        <thead><tr><th>Data</th><th>Where it is stored</th><th>Why</th></tr></thead>
+        <tbody>
+          <tr><td>Receipt photos and PDFs you import</td><td>App-private storage</td><td>To display the original and re-run recognition</td></tr>
+          <tr><td>Recognized text and extracted fields (merchant, date, amounts, line items)</td><td>App-private local database</td><td>To build the receipt list and export Excel</td></tr>
+          <tr><td>Settings (language, templates, columns, category rules, AI options)</td><td>App-private preferences</td><td>To keep the app configured as you like</td></tr>
+          <tr><td>Cloud AI API key (if you enter one)</td><td>Encrypted with AndroidX Security Crypto</td><td>To call the provider you chose</td></tr>
+        </tbody>
+      </table>
+      <p>This data stays on your device until you delete a receipt in the app, clear the app's data, or uninstall SnapSheet. Uninstalling removes the app's private storage. Android cloud backup is disabled for SnapSheet (<code>allowBackup="false"</code>), so this data is not copied to Google Drive by the system.</p>
+      <p>Exported <code>.xlsx</code> files are written to the location you choose through the Android system file picker. Those files are then controlled by you and by the app or cloud storage you save them to.</p>
+
+      <h2 id="permissions">3. Permissions and system access</h2>
+      <p>SnapSheet requests only:</p>
+      <ul>
+        <li><strong>Internet</strong> — for optional model downloads, optional cloud AI, and Google Play billing.</li>
+        <li><strong>Google Play billing</strong> — to offer the one-time Premium purchase.</li>
+      </ul>
+      <p>SnapSheet does <strong>not</strong> request camera, microphone, contacts, location or storage permissions. Photos are chosen through the Android photo picker, and camera capture is handled by your device's camera app, which returns the image to SnapSheet through a temporary, app-private file.</p>
+
+      <h2 id="leaving">4. When data leaves your device</h2>
+
+      <h3>4.1 Optional cloud AI (off by default)</h3>
+      <p>If you enable <strong>AI enhancement</strong>, choose <strong>Cloud AI</strong>, and enter a base URL, model name and API key, SnapSheet sends the <strong>recognized receipt text</strong> and a short instruction prompt to the OpenAI-compatible provider you configured. It does not send your photos or PDFs.</p>
+      <ul>
+        <li>The recipient is the provider <strong>you</strong> choose (for example OpenAI, Google, OpenRouter, DeepSeek, or a self-hosted server). Their handling of the data is governed by their own privacy policy and terms.</li>
+        <li>The default is <code>https://api.openai.com/v1</code>. Remote endpoints must use HTTPS. Plain HTTP is accepted only for localhost or private local-network addresses (for example a server on your own LAN), so that self-hosted setups can work without exposing data to the public internet.</li>
+        <li>Your API key is stored encrypted on your device, is sent only to that provider, and is never sent to the developer.</li>
+        <li>You can turn AI enhancement off at any time, or enable <strong>Fully offline mode</strong> to block all network access.</li>
+      </ul>
+
+      <h3>4.2 Optional OCR model downloads</h3>
+      <p>If you download the larger PP-OCRv6 Small model or an on-device AI model, SnapSheet downloads it from Hugging Face (<code>huggingface.co</code>) or, if that host is unreachable, its mirror (<code>hf-mirror.com</code>). These requests contain standard technical information such as your IP address and user agent, which those services handle under their own privacy policies. No receipt data is included.</p>
+      <p>The built-in PP-OCRv6 Tiny model is bundled in the app and requires no download.</p>
+
+      <h3>4.3 Google Play billing</h3>
+      <p>The Premium upgrade is sold through Google Play Billing. Google processes the payment; SnapSheet does not receive or store your payment card details. Google's handling of purchase data is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
+
+      <h3>4.4 On-device text recognition</h3>
+      <p>SnapSheet uses Google ML Kit for on-device text recognition. Recognition runs locally on your device. Google Play services components used by ML Kit may collect diagnostic and usage information as described in Google's privacy policy.</p>
+
+      <h3>4.5 What the developer does not receive</h3>
+      <p>The developer does not operate a backend, does not receive your receipts or API keys, and does not use advertising, analytics, attribution or crash-reporting services.</p>
+
+      <h2 id="sharing">5. Sharing and selling</h2>
+      <p>The developer does not sell, rent or share your personal data. Data is transmitted only in the limited cases described in section 4, and always at your direction (cloud AI, model download) or to complete a purchase you requested (Google Play billing).</p>
+      <p>SnapSheet has no social features, no user accounts, and no user-to-user communication.</p>
+
+      <h2 id="children">6. Children</h2>
+      <p>SnapSheet is a productivity tool intended for adults and is not directed to children under 13 (or the minimum age required in your country). The app does not knowingly collect personal information from children. If you believe a child has provided personal information, contact <a href="mailto:wxujie666@gmail.com">wxujie666@gmail.com</a>.</p>
+
+      <h2 id="security">7. Security</h2>
+      <ul>
+        <li>Receipt processing happens locally whenever possible.</li>
+        <li>Remote AI endpoints must use HTTPS; HTTP is limited to localhost and private LAN addresses.</li>
+        <li>API keys are encrypted at rest using AndroidX Security Crypto and Android Keystore.</li>
+        <li>Android cloud backup is disabled for the app.</li>
+        <li>No method of storage or transmission is completely secure, but SnapSheet keeps the amount of data that leaves the device to a minimum.</li>
+      </ul>
+
+      <h2 id="deletion">8. Your choices and data deletion</h2>
+      <ul>
+        <li><strong>Delete individual receipts</strong> in the app; their images and extracted data are removed from the app's storage.</li>
+        <li><strong>Clear app data</strong> in Android Settings, or <strong>uninstall SnapSheet</strong>, to remove all app-private data.</li>
+        <li><strong>Turn off AI enhancement</strong>, or enable <strong>Fully offline mode</strong>, to stop network access.</li>
+        <li><strong>Remove your API key</strong> in Settings to delete the encrypted key from the device.</li>
+        <li>Because the developer holds no server-side copy of your data, there is no separate deletion request to make. For questions, contact <a href="mailto:wxujie666@gmail.com">wxujie666@gmail.com</a>.</li>
+      </ul>
+
+      <h2 id="third-parties">9. Third-party services</h2>
+      <table>
+        <thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead>
+        <tbody>
+          <tr><td>Google Play services / Google Play Billing</td><td>In-app purchase</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></td></tr>
+          <tr><td>Google ML Kit</td><td>On-device text recognition</td><td><a href="https://developers.google.com/ml-kit/terms" rel="noopener">developers.google.com/ml-kit/terms</a></td></tr>
+          <tr><td>Hugging Face / hf-mirror</td><td>Optional model downloads</td><td><a href="https://huggingface.co/privacy" rel="noopener">huggingface.co/privacy</a></td></tr>
+          <tr><td>Your chosen AI provider</td><td>Optional cloud AI enhancement</td><td>The provider's own policy</td></tr>
+        </tbody>
+      </table>
+
+      <h2 id="changes">10. Changes to this policy</h2>
+      <p>If this policy changes, the updated version will be posted at the same URL with a new effective date. Material changes will also be noted in the app's release notes.</p>
+
+      <h2 id="contact">11. Contact</h2>
+      <p>
+        <strong>Developer:</strong> SnapSheet<br>
+        <strong>Email:</strong> <a href="mailto:wxujie666@gmail.com">wxujie666@gmail.com</a>
+      </p>
+    </article>
+  </div>
+</main>
+
+<footer>© 2026 SnapSheet · <a href="terms.html">Terms of Service</a></footer>
+</body>
+</html>

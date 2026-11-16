@@ -1,2 +1,6 @@
-# snapsheet-legal
-Privacy Policy and Terms of Service for SnapSheet
+﻿# SnapSheet Legal
+
+Privacy Policy: https://wxujie.github.io/snapsheet-legal/privacy.html
+
+Terms of Service: https://wxujie.github.io/snapsheet-legal/terms.html
+
