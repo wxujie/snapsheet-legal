@@ -182,7 +182,7 @@
       <h2 id="leaving">4. When data leaves your device</h2>
 
       <h3>4.1 Optional cloud AI (off by default)</h3>
-      <p>If you enable <strong>AI enhancement</strong>, choose <strong>Cloud AI</strong>, and enter a base URL, model name and API key, SnapSheet sends the <strong>recognized receipt text</strong> and a short instruction prompt to the OpenAI-compatible provider you configured. It does not send your photos or PDFs.</p>
+      <p>If you enable <strong>AI enhancement</strong>, choose <strong>Cloud AI</strong>, and enter a base URL, model name and API key, SnapSheet sends the <strong>recognized receipt text</strong> and a short instruction prompt to the OpenAI-compatible provider you configured. If you also enable <strong>Force AI review</strong>, the prompt additionally contains the fields extracted by the on-device parser (merchant, date, amounts and line items) so the model can verify them. It does not send your photos or PDFs.</p>
       <ul>
         <li>The recipient is the provider <strong>you</strong> choose (for example OpenAI, Google, OpenRouter, DeepSeek, or a self-hosted server). Their handling of the data is governed by their own privacy policy and terms.</li>
         <li>The default is <code>https://api.openai.com/v1</code>. Remote endpoints must use HTTPS. Plain HTTP is accepted only for localhost or private local-network addresses (for example a server on your own LAN), so that self-hosted setups can work without exposing data to the public internet.</li>
