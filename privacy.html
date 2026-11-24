@@ -118,7 +118,7 @@
     <h1>Privacy Policy</h1>
     <p class="sub">Receipts stay on your device. AI is optional and off by default.</p>
     <div class="meta">
-      <span><strong>Effective:</strong> 16 November 2026</span>
+      <span><strong>Effective:</strong> 24 November 2026</span>
       <span><strong>App:</strong> SnapSheet for Android</span>
       <span><strong>Package:</strong> com.snapsheet.app</span>
     </div>
@@ -192,14 +192,14 @@
       </ul>
 
       <h3>4.2 Optional OCR model downloads</h3>
-      <p>If you download the larger PP-OCRv6 Small model or an on-device AI model, SnapSheet downloads it from Hugging Face (<code>huggingface.co</code>) or, if that host is unreachable, its mirror (<code>hf-mirror.com</code>). These requests contain standard technical information such as your IP address and user agent, which those services handle under their own privacy policies. No receipt data is included.</p>
-      <p>The built-in PP-OCRv6 Tiny model is bundled in the app and requires no download.</p>
+      <p>If you download the optional PP-OCRv6 Medium OCR model or an on-device AI model, SnapSheet downloads it from Hugging Face (<code>huggingface.co</code>) or, if that host is unreachable, its mirror (<code>hf-mirror.com</code>). These requests contain standard technical information such as your IP address and user agent, which those services handle under their own privacy policies. No receipt data is included.</p>
+      <p>The built-in PP-OCRv6 Small model is bundled in the app and requires no download.</p>
 
       <h3>4.3 Google Play billing</h3>
       <p>The Premium upgrade is sold through Google Play Billing. Google processes the payment; SnapSheet does not receive or store your payment card details. Google's handling of purchase data is described in the <a href="https://policies.google.com/privacy" rel="noopener">Google Privacy Policy</a>.</p>
 
       <h3>4.4 On-device text recognition</h3>
-      <p>SnapSheet uses Google ML Kit for on-device text recognition. Recognition runs locally on your device. Google Play services components used by ML Kit may collect diagnostic and usage information as described in Google's privacy policy.</p>
+      <p>SnapSheet runs PP-OCRv6 (PaddleOCR) entirely on your device for text recognition, using ONNX Runtime and OpenCV. Recognition is fully local. No receipt images, recognized text or derived data are sent to Google or the developer for recognition.</p>
 
       <h3>4.5 What the developer does not receive</h3>
       <p>The developer does not operate a backend, does not receive your receipts or API keys, and does not use advertising, analytics, attribution or crash-reporting services.</p>
@@ -234,7 +234,7 @@
         <thead><tr><th>Service</th><th>Purpose</th><th>Policy</th></tr></thead>
         <tbody>
           <tr><td>Google Play services / Google Play Billing</td><td>In-app purchase</td><td><a href="https://policies.google.com/privacy" rel="noopener">policies.google.com/privacy</a></td></tr>
-          <tr><td>Google ML Kit</td><td>On-device text recognition</td><td><a href="https://developers.google.com/ml-kit/terms" rel="noopener">developers.google.com/ml-kit/terms</a></td></tr>
+          <tr><td>PP-OCRv6 (PaddleOCR)</td><td>On-device text recognition</td><td><a href="https://github.com/PaddlePaddle/PaddleOCR" rel="noopener">github.com/PaddlePaddle/PaddleOCR</a></td></tr>
           <tr><td>Hugging Face / hf-mirror</td><td>Optional model downloads</td><td><a href="https://huggingface.co/privacy" rel="noopener">huggingface.co/privacy</a></td></tr>
           <tr><td>Your chosen AI provider</td><td>Optional cloud AI enhancement</td><td>The provider's own policy</td></tr>
         </tbody>
